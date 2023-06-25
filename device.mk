@@ -25,6 +25,7 @@ $(call inherit-product, vendor/samsung/klte-common/klte-common-vendor-ril-m.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Display Device Config
 PRODUCT_COPY_FILES += \
