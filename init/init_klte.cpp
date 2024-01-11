@@ -43,7 +43,7 @@ void vendor_load_properties()
         /* kltexx */
         property_override("ro.build.description", "kltexx-user 6.0.1 MMB29M G900FXXU1CRH1 release-keys");
         set_ro_product_prop("device", "klte");
-        set_ro_product_prop("fingerprint", "samsung/kltexx/klte:6.0.1/MMB29M/G900FXXU1CRH1:user/release-keys");
+        set_ro_product_prop("build.fingerprint", "samsung/kltexx/klte:6.0.1/MMB29M/G900FXXU1CRH1:user/release-keys");
         set_ro_product_prop("model", "SM-G900F");
         set_ro_product_prop("name", "klte");
         gsm_properties("9", "gsm");
@@ -51,7 +51,7 @@ void vendor_load_properties()
         /* klteub */
         property_override("ro.build.description", "klteub-user 6.0.1 MMB29M G900MUBS1CQD5 release-keys");
         set_ro_product_prop("device", "klte");
-        set_ro_product_prop("fingerprint", "samsung/klteub/klte:6.0.1/MMB29M/G900MUBS1CQD5:user/release-keys");
+        set_ro_product_prop("build.fingerprint", "samsung/klteub/klte:6.0.1/MMB29M/G900MUBS1CQD5:user/release-keys");
         set_ro_product_prop("model", "SM-G900M");
         set_ro_product_prop("name", "klte");
         gsm_properties("9", "gsm");
@@ -59,7 +59,7 @@ void vendor_load_properties()
         /* klteusc */
         property_override("ro.build.description", "klteusc-user 6.0.1 MMB29M G900R4VXS2CQC2 release-keys");
         set_ro_product_prop("device", "klteusc");
-        set_ro_product_prop("fingerprint", "samsung/klteusc/klteusc:6.0.1/MMB29M/G900R4VXS2CQC2:user/release-keys");
+        set_ro_product_prop("build.fingerprint", "samsung/klteusc/klteusc:6.0.1/MMB29M/G900R4VXS2CQC2:user/release-keys");
         set_ro_product_prop("model", "SM-G900R4");
         set_ro_product_prop("name", "klteusc");
         cdma_properties("U.S. Cellular", "311220", "0", "10", "usc");
@@ -67,7 +67,7 @@ void vendor_load_properties()
         /* klteacg - CSpire variant */
         property_override("ro.build.description", "klteacg-user 6.0.1 MMB29M G900R7WWU3CPL1 release-keys");
         set_ro_product_prop("device", "klteacg");
-        set_ro_product_prop("fingerprint", "samsung/klteacg/klteacg:6.0.1/MMB29M/G900R7WWU3CPL1:user/release-keys");
+        set_ro_product_prop("build.fingerprint", "samsung/klteacg/klteacg:6.0.1/MMB29M/G900R7WWU3CPL1:user/release-keys");
         set_ro_product_prop("model", "SM-G900R7");
         set_ro_product_prop("name", "klteacg");
         cdma_properties("Default", "310000", "0", "10", "usc");
@@ -76,7 +76,7 @@ void vendor_load_properties()
         property_override("ro.build.description", "kltetmo-user 6.0.1 MMB29M G900TUVU1GQC2 release-keys");
         property_override("persist.radio.add_power_save", "0");
         set_ro_product_prop("device", "kltetmo");
-        set_ro_product_prop("fingerprint", "samsung/kltetmo/kltetmo:6.0.1/MMB29M/G900TUVU1GQC2:user/release-keys");
+        set_ro_product_prop("build.fingerprint", "samsung/kltetmo/kltetmo:6.0.1/MMB29M/G900TUVU1GQC2:user/release-keys");
         set_ro_product_prop("model", "SM-G900T");
         set_ro_product_prop("name", "kltetmo");
         gsm_properties("9", "gsm");
@@ -85,7 +85,7 @@ void vendor_load_properties()
         property_override("ro.build.description", "kltevzw-user 6.0.1 MMB29M G900VVRU2DQL1 release-keys");
         property_override("ro.telephony.get_imsi_from_sim", "true");
         set_ro_product_prop("device", "kltevzw");
-        set_ro_product_prop("fingerprint", "Verizon/kltevzw/kltevzw:6.0.1/MMB29M/G900VVRU2DQL1:user/release-keys");
+        set_ro_product_prop("build.fingerprint", "Verizon/kltevzw/kltevzw:6.0.1/MMB29M/G900VVRU2DQL1:user/release-keys");
         set_ro_product_prop("model", "SM-G900V");
         set_ro_product_prop("name", "kltevzw");
         cdma_properties("Verizon", "311480", "0", "10", "vzw");
@@ -94,7 +94,7 @@ void vendor_load_properties()
         property_override("ro.build.description", "kltevl-user 6.0.1 MMB29M G900W8VLU1DQB2 release-keys");
         property_override("persist.radio.add_power_save", "0");
         set_ro_product_prop("device", "kltecan");
-        set_ro_product_prop("fingerprint", "samsung/kltevl/kltecan:6.0.1/MMB29M/G900W8VLU1DQB2:user/release-keys");
+        set_ro_product_prop("build.fingerprint", "samsung/kltevl/kltecan:6.0.1/MMB29M/G900W8VLU1DQB2:user/release-keys");
         set_ro_product_prop("model", "SM-G900W8");
         set_ro_product_prop("name", "kltecan");
         gsm_properties("9", "gsm");
