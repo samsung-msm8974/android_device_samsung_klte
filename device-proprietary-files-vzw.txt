@@ -1,3 +1,0 @@
-## Verizon Blobs - pinned to haxxed G900VVRU2DQL1_G900VVZW2DQL1_VZW
-# Radio
-lib/libsec-ril.so:vendor/lib/libsec-ril.vzw.so|c96f91f30083e484aecbca75c226b6a695277d12

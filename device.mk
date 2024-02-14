@@ -19,7 +19,6 @@ COMMON_PATH := device/samsung/msm8974-common
 
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/samsung/klte/klte-vendor.mk)
-$(call inherit-product, vendor/samsung/klte-common/klte-common-vendor-ril-m.mk)
 
 # Soong
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
