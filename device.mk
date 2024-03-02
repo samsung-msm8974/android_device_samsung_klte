@@ -21,6 +21,9 @@ COMMON_PATH := device/samsung/msm8974-common
 $(call inherit-product, vendor/samsung/klte/klte-vendor.mk)
 $(call inherit-product, vendor/samsung/klte-common/klte-common-vendor-ril-m.mk)
 
+# Soong
+PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage

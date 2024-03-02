@@ -46,7 +46,7 @@ BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../$(COMMON_PATH)/recovery/recovery_keys.
 TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/klte-include
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_klte
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_klte
 
 # Fingerprint
 include $(COMMON_PATH)/fingerprint/board.mk
