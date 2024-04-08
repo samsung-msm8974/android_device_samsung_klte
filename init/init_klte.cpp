@@ -74,17 +74,7 @@ void vendor_load_properties()
         property_override(prop_name.c_str(), value.c_str(), false);
     };
 
-    if (bootloader.find("G900AZ") == 0) {
-        /* klteaio - Cricket MVNO */
-        for (const auto &source : ro_product_props_default_source_order) {
-            set_ro_product_prop(source, "build.fingerprint", "samsung/kltetu/klteaio:5.0/LRX21T/G900AZTUS3BQD1:user/release-keys");
-            set_ro_product_prop(source, "device", "klteaio");
-            set_ro_product_prop(source, "model", "SM-G900AZ");
-            set_ro_product_prop(source, "name", "klteaio");
-        }
-        property_override("ro.build.description", "kltetu-user 5.0 LRX21T G900AZTUS3BQD1 release-keys");
-        property_override("ro.build.product", "klteaio");
-    } else if (bootloader.find("G900F") == 0) {
+    if (bootloader.find("G900F") == 0) {
         /* kltexx */
         for (const auto &source : ro_product_props_default_source_order) {
             set_ro_product_prop(source, "build.fingerprint", "samsung/kltexx/klte:6.0.1/MMB29M/G900FXXU1CRH1:user/release-keys");
@@ -160,18 +150,6 @@ void vendor_load_properties()
         }
         property_override("ro.build.description", "kltevl-user 6.0.1 MMB29M G900W8VLU1DQB2 release-keys");
         property_override("ro.build.product", "kltecan");
-    } else if (bootloader.find("S902L") == 0) {
-        /* kltetfnvzw */
-        for (const auto &source : ro_product_props_default_source_order) {
-            set_ro_product_prop(source, "build.fingerprint", "samsung/kltetfnvzw/kltetfnvzw:4.4.2/KOT49H/S902LUDUAOD3:user/release-keys");
-            set_ro_product_prop(source, "device", "kltetfnvzw");
-            set_ro_product_prop(source, "model", "SM-S902L");
-            set_ro_product_prop(source, "name", "kltetfnvzw");
-        }
-        property_override("ro.build.description", "kltetfnvzw-user 4.4.2 KOT49H S902LUDUAOD3 release-keys");
-        property_override("ro.build.product", "kltetfnvzw");
-        property_override("ro.cdma.home.operator.alpha", "TracFone");
-        property_override("ro.cdma.home.operator.numeric", "310000");
     }
 
     const std::string device = GetProperty("ro.product.device", "");
